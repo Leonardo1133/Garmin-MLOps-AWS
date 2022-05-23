@@ -7,11 +7,12 @@ Crearemos una primera iteracion del modelo de condicion fisica, y lo implementar
 
 Para el despliegue de esta arquitectura y la infraestructura correspondiente usaremos Amazon Web Services. Crearemos una arquitectura usando el framework MLOPS para poner en produccion nuestro modelo de ML generado en la etapa previa, y asi poder consumirlo desde una API. En la figura a continuacion se esquematiza un diagrama que muestra el ciclo de vida del modelo end to end.
 
-####1) Data
+#### 1) Data
 Descargamos los datos RAW que entrega la API de Garmin Connect en formato JSON, los guardaremos en un bucket s3 y aplicamos algunas transformaciones para llevarlo a un formato CSV.
 
-####2) ModelBuild
-Es un repositorio en codeCommit que organiza la construccion del modelo. Se encarga de desplegar y orquestar cada uno de los pasos de la creacion del modelo: 
+#### 2) ModelBuild
+Es un repositorio en codeCommit que organiza la construccion del modelo. Se encarga de desplegar y orquestar cada uno de los pasos de la creacion del modelo:  
+
 - Preprocessing 
 - Trainig
 - Validation
@@ -22,6 +23,7 @@ Una vez entrenado, se almacena en un bucket S3 para posteriormente, ser llamado 
 
 #### 4) ModelDeploy
 Es un repositorio en codeCommit que despliega toda la infraestructura y servicios necesarios para desplegar y consumir el endpoint del modelo: 
+
 - Model Endpoint
 - Lambda Start Endpoint
 - EventBridge (start lambda)

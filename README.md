@@ -8,7 +8,7 @@ Crearemos una primera iteracion del modelo de condicion fisica, y lo implementar
 Para el despliegue de esta arquitectura y la infraestructura correspondiente usaremos Amazon Web Services. Crearemos una arquitectura usando el framework MLOPS para poner en produccion nuestro modelo de ML generado en la etapa previa, y asi poder consumirlo desde una API. En la figura a continuacion se esquematiza un diagrama que muestra el ciclo de vida del modelo end to end.
 
 ## 1) Data
-Descargamos los datos RAW que entrega la API de Garmin Connect en formato JSON, los guardaremos en un bucket s3 y aplicamos algunas transformaciones para llevarlo a un formato CSV. Para el download de los datos usamos como referencia el siguiente repositorio:
+Descargamos los datos RAW que entrega la API de Garmin Connect en formato JSON, los guardaremos en un bucket s3 y aplicamos algunas transformaciones para llevarlo a un formato CSV. Para el download de los datos usamos como referencia algunas herramientas que estan en el siguiente repositorio:
 
 https://github.com/petergardfjall/garminexport/blob/master/README.md
 

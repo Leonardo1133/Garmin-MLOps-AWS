@@ -1,4 +1,4 @@
-# Garmin Predict
+# Garmin Prediction Model
 Este Proyecto se trata de un modelo predictivo sobre nuestra condicion fisica usando los datos que entrega nuestro dispositivo Garmin. 
 
 Crearemos una primera iteracion del modelo de condicion fisica, y lo implementaremos en AWS para poder consumirlo desde un API y asi desde cualquier navegador web. De esta forma, tenemos un end to end rapidamente, repartiendo esfuerzos en cada una de las partes del proyecto.

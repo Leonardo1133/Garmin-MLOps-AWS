@@ -36,4 +36,6 @@ Ambos repositorios: ModelBuil y ModelDeploy utilizan IAC (Infrastructure as code
 ## 5) Feature Store
 Feature store es un almacen o repositorio de nuestros datos de entrenamiento, ya estan listos para ser usados. Esto se realiza en la primera etapa de construccion del modelo. En caso de un reentrenamiento pueden crearse distintas versiones de estos datos y conservarlos en el FS.
 
+## Arquitectura
+
 ![image](https://user-images.githubusercontent.com/42939877/169722217-467b8d04-8e7e-4656-be9d-c24f32a48b7e.png)

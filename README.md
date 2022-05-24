@@ -38,4 +38,4 @@ Feature store es un almacen o repositorio de nuestros datos de entrenamiento, ya
 
 ## Arquitectura
 
-![image](https://user-images.githubusercontent.com/42939877/169722217-467b8d04-8e7e-4656-be9d-c24f32a48b7e.png)
+![MLOps_Arquitectura drawio (2)](https://user-images.githubusercontent.com/42939877/170050487-0f2d120f-30f4-4b55-afc3-815e38abefff.png)

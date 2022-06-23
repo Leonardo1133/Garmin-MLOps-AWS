@@ -1,11 +1,11 @@
 # Garmin Prediction Model (Repositorio en Construccion!)
-Este Proyecto se trata de un modelo predictivo sobre nuestra condicion fisica usando los datos que entrega nuestro dispositivo Garmin. 
+Este Proyecto se trata de la puesta en produccion en AWS de un modelo predictivo sobre nuestra condicion fisica usando los datos que entrega nuestro dispositivo Garmin. 
 
-Crearemos una primera iteracion del modelo de condicion fisica, y lo implementaremos en AWS para poder consumirlo desde un API y asi desde cualquier navegador web. De esta forma, tenemos un end to end rapidamente, repartiendo esfuerzos en cada una de las partes del proyecto.
+Crearemos una primera iteracion del modelo, y lo implementaremos en AWS para poder consumirlo desde un API y asi desde cualquier navegador web. De esta forma, tenemos un end to end rapidamente, repartiendo esfuerzos en cada una de las partes del proyecto.
 
 # MLOps
 
-Para el despliegue de esta arquitectura y la infraestructura correspondiente usaremos Amazon Web Services. Crearemos una arquitectura usando el framework MLOPS para poner en produccion nuestro modelo de ML generado en la etapa previa, y asi poder consumirlo desde una API. En la figura a continuacion se esquematiza un diagrama que muestra el ciclo de vida del modelo end to end.
+Para el despliegue de esta arquitectura y la infraestructura correspondiente usaremos AWS SageMaker. Crearemos una arquitectura usando el framework MLOPS para poner en produccion nuestro modelo de ML generado en la etapa previa, y asi poder consumirlo desde una API. En la figura que esta a continuacion se esquematiza un diagrama que muestra el ciclo de vida del modelo.
 
 ## 1) Data
 Descargamos los datos RAW que entrega la API de Garmin Connect en formato JSON, los guardaremos en un bucket s3 y aplicamos algunas transformaciones para llevarlo a un formato CSV. Para el download de los datos usamos como referencia algunas herramientas que estan en el siguiente repositorio:
